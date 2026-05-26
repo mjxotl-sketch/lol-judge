@@ -163,7 +163,7 @@ if summoner_input and tag_input:
         troll_index = random.randint(65, 98)
         avg_deal = random.randint(4200, 11500)
         
-        if not RIOT_API_KEY:
+        if not riot_api_key:
             st.info("💡 데모 모드 작동 중 (사이드바에 라이엇 API 키를 입력하면 100% 진짜 인게임 전적과 교체됩니다).")
         else:
             st.warning("⚠️ 입력하신 소환사명과 태그를 라이엇 서버에서 찾을 수 없어 가상 매칭 전적으로 대체합니다.")
