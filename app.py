@@ -140,7 +140,7 @@ if summoner_input and tag_input:
     selected_account_name = f"{summoner_input}#{tag_input}"
     
     with st.spinner("🌐 라이엇 공식 메인프레임 서버에서 전적 실시간 파싱 중..."):
-        real_data = get_real_riot_data(summoner_input, tag_input, RIOT_API_KEY)
+       real_data = get_real_riot_data(summoner_input, tag_input, riot_api_key)
     
     # 실제 라이엇 데이터 연동 성공 시
     if real_data and real_data.get("real"):
