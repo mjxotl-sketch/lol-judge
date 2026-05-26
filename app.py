@@ -78,7 +78,8 @@ GOOGLE_API_KEY = "AIzaSyBAgzNsLMk-hd1RhwdNHjcmOPOPFc9VMVg"
 genai.configure(api_key=GOOGLE_API_KEY)
 
 # 💡 라이엇 공식 API 인증 키 (실제 배포 시 여기에 본인의 Riot API Key를 넣으시면 됩니다)
-RIOT_API_KEY = st.sidebar.text_input("Riot API Key (선택)", value="", type="password", help="라이엇 개발자 포털에서 발급받은 키를 넣으면 100% 실시간 진짜 전적이 연동됩니다.")
+# 81번 줄을 이렇게 바꾸세요
+riot_api_key = st.secrets.get("RIOT_API_KEY", "")
 
 if "recorded_video_bytes" not in st.session_state:
     st.session_state.recorded_video_bytes = None
