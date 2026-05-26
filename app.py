@@ -7,7 +7,7 @@ import requests
 import random
 
 # 1. 웹사이트 스타일 및 테마 설정
-st.set_page_config(page_title="솔랭 정의구현 심판소", layout="centered")
+st.set_page_config(page_title="롤 전적 분석기: 솔랭 정의구현 심판소", layout="centered")
 
 st.markdown("""
     <style>
